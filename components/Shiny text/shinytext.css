@@ -1,0 +1,27 @@
+.shiny-text {
+  color: #b5b5b5a4;
+  background: linear-gradient(
+    120deg,
+    rgba(237, 237, 237, 1) 40%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(237, 237, 237, 1) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 1.5s linear;
+  animation-delay: 1s;
+  font-size: 18px;
+  background-position: -100% 0;
+  letter-spacing: 0;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
