@@ -21,10 +21,11 @@ export default function ShinyText() {
     });
   });
 
+  //Shiny Text Notworking, add shiny-text class, now just returning normal text
   return (
     <>
       <div className="overflow-hidden">
-        <div id="splitType" className="shiny-text split font-bold">
+        <div id="splitType" className="text-[#ececec] text-lg split font-bold">
           NAVEEN
         </div>
       </div>
