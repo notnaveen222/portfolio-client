@@ -1,8 +1,7 @@
 "use client";
 import ShinyText from "@/components/Shiny text/ShinyText";
-import gsap from "gsap-trial";
+import gsap from "gsap";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
 
 export default function Preloader() {
   const name = "NAVEEN";
