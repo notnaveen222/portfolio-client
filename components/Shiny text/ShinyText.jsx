@@ -3,6 +3,7 @@ import "./shinytext.css";
 import gsap from "gsap";
 import { useEffect } from "react";
 import SplitType from "split-type";
+import { motion } from "framer-motion";
 
 export default function ShinyText() {
   useEffect(() => {
@@ -25,9 +26,18 @@ export default function ShinyText() {
   return (
     <>
       <div className="overflow-hidden">
-        <div id="splitType" className="text-[#ececec] text-lg split font-bold">
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          id="splitType"
+          className="text-[#ececec] text-lg split font-bold"
+        >
           NAVEEN
-        </div>
+        </motion.div>
       </div>
     </>
   );
