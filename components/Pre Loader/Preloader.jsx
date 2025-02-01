@@ -23,8 +23,8 @@ export default function Preloader() {
   });
   return (
     <>
-      <div className="outer-preloader h-screen bg-[#ececec]">
-        <div className="pre-loader  bg-[#0a0a0a] absolute h-screen w-screen flex justify-center items-center">
+      <div className="outer-preloader absolute h-screen w-screen bg-[#ececec]">
+        <div className="pre-loader  bg-black absolute h-screen w-screen flex justify-center items-center">
           <ShinyText />
         </div>
       </div>

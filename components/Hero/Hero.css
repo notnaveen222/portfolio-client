@@ -1,0 +1,53 @@
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-dot {
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-color: rgba(0, 108, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  animation: dot-scale 2s linear 0s infinite forwards;
+}
+
+.small-dot {
+  content: "";
+  height: 13px;
+  width: 13px;
+  background-color: #006cff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.custom-cursor {
+  position: absolute;
+  background-color: white !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+@keyframes dot-scale {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
