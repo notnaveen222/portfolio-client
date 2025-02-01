@@ -53,12 +53,12 @@ export default function Hero() {
           <StaggerText
             title="WEB"
             selfDelay={2.7}
-            stlyes="text-6xl sm:text-xl md:text-9xl"
+            stlyes="text-6xl sm:text-xl md:text-9xl font-extrabold"
           />
           <StaggerText
             title="ARCHITECT"
             selfDelay={2.75}
-            stlyes="text-6xl sm:text-8xl md:text-9xl"
+            stlyes="text-6xl sm:text-8xl md:text-9xl font-extrabold"
           />
         </div>
         <motion.div

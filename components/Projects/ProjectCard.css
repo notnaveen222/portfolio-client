@@ -1,0 +1,29 @@
+.project-arrow {
+  position: relative;
+  right: -60px;
+  transition: all 0.2s;
+}
+
+.project-tile:hover .project-arrow {
+  right: 15px;
+}
+
+.project-tile:hover .project-card-title {
+  height: 30%;
+  background: linear-gradient(to top, black 60%, transparent);
+}
+
+.project-card-title {
+  background: linear-gradient(to top, transparent, transparent);
+  transition: all 0.3s;
+}
+
+.project-desc {
+  position: relative;
+  top: 20px;
+  transition: all 0.4s;
+}
+
+.project-tile:hover .project-desc {
+  top: 0px;
+}
