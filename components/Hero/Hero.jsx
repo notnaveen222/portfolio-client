@@ -4,11 +4,16 @@ import { motion } from "framer-motion";
 import StaggerText from "../StaggerText";
 import "./Hero.css";
 import { GoArrowUpRight } from "react-icons/go";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const inter = Inter_Tight({ subsets: ["latin"] });
 
 export default function Hero() {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2500);
+  }, []);
   const [cursorPos, setCursorPos] = useState({
     x: 0,
     y: 0,
@@ -44,7 +49,7 @@ export default function Hero() {
               <div className="big-dot"></div>
             </div>
             <div></div>
-            <div className="tracking-widest  font-light flex items-center gap-1 opacity-90 hover:opacity-100">
+            <div className="tracking-widest  font-light flex items-center gap-1 opacity-90 hover:opacity-100 selection:bg-[#a1a1a1]/20">
               AVAILABLE FOR WORK <GoArrowUpRight />
             </div>
           </div>
@@ -71,7 +76,7 @@ export default function Hero() {
           transition={{
             delay: 3,
           }}
-          className="text-[#A1A1A1] text-xl w-[85%] lg:w-[30%] text-center "
+          className="text-[#A1A1A1] text-xl w-[85%] lg:w-[30%] text-center selection:bg-[#a1a1a1]/20"
         >
           Designer and Developer, focused on intuitive and engaging user
           experiences.

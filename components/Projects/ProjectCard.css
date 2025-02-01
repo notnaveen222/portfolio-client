@@ -27,3 +27,9 @@
 .project-tile:hover .project-desc {
   top: 0px;
 }
+
+@media (max-width: 640px) {
+  .project-desc {
+    top: 0px;
+  }
+}

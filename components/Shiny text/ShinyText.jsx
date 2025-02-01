@@ -34,7 +34,7 @@ export default function ShinyText() {
             opacity: 1,
           }}
           id="splitType"
-          className="text-[#ececec] text-lg split font-bold"
+          className="text-[#ececec] text-lg split font-bold selection:bg-transparent"
         >
           NAVEEN
         </motion.div>

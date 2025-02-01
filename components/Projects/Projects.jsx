@@ -9,11 +9,10 @@ import StaggerText from "../StaggerText";
 export default function Projects() {
   return (
     <>
-      <motion.div className="">PROJECTS</motion.div>
       <StaggerText
         title="PROJECTS"
         selfDelay={3}
-        stlyes=" text-5xl mb-20 text-center font-semibold"
+        stlyes=" text-4xl md:text-5xl mb-20 text-center font-semibold"
       />
       <motion.div
         initial={{
@@ -25,7 +24,7 @@ export default function Projects() {
         transition={{
           delay: 3,
         }}
-        className="grid grid-cols-2 gap-10 px-40"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-10 px-5 sm:px-20 lg:px-40 mb-20"
       >
         <ProjectCard
           src={codeDropImage}
@@ -36,16 +35,6 @@ export default function Projects() {
           src={qrcGenImage}
           title="QRC Gen + Extension"
           description="Fast and simple QR Generator site and Extension"
-        />
-        <ProjectCard
-          src={qrcGenImage}
-          title="QRC Gen + Extension"
-          description="Fast and simple QR Generator site and Extension"
-        />
-        <ProjectCard
-          src={codeDropImage}
-          title="Code Drop"
-          description="Seamlessly create code snippets, Built with NextJS, Express, MongoDB"
         />
       </motion.div>
     </>

@@ -14,12 +14,14 @@ export default function ProjectCard({ src, title, description }) {
           src={src}
           alt="Project Thumbnail"
         ></Image>
-        <div className="absolute bottom-0 project-card-title flex items-center justify-between pl-5 h-[15%] w-full">
+        <div className="absolute bottom-0 project-card-title flex items-center justify-between pl-5 h-[40%] sm:h-[15%] w-full">
           <div>
-            <div className=" text-white left-5 font-bold text-3xl mb-3">
+            <div className=" text-white left-5 pb-0 font-bold text-xl sm:text-3xl ">
               {title}
             </div>
-            <div className="project-desc text-white text-xl">{description}</div>
+            <div className="project-desc text-white text-xs sm:text-base">
+              {description}
+            </div>
           </div>
           <div className="text-4xl bg-white rounded-full  project-arrow">
             <GoArrowUpRight />
