@@ -15,7 +15,7 @@ export default function StaggerText({ title, selfDelay, stlyes }) {
           },
         },
       }}
-      className={`text-white font-extrabold tracking-tight text-9xl text-center overflow-hidden block pb-0 selection:bg-white selection:text-black ${stlyes}`}
+      className={`text-white font-extrabold tracking-tight text-center overflow-hidden block pb-0 selection:bg-white selection:text-black ${stlyes}`}
     >
       {title.split("").map((l, i) => {
         return (
