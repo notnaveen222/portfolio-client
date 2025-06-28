@@ -4,9 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./about.css";
 
 import Image from "next/image";
-import GraphicImage from "./Assets/GraphicImage.jpg";
-import Ceasar from "./Assets/Ceasar.jpg";
-import AnimeImage from "./Assets/animeImage2.jpg";
+import GraphicImage from "./assets/GraphicImage.jpg";
+import Ceasar from "./assets/Ceasar.jpg";
+import AnimeImage from "./assets/animeImage2.jpg";
 import GymImage from "./assets/image2.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -221,7 +221,7 @@ export default function AboutV2() {
       </div>
       <div className="text-white h-[190vh] w-screen flex flex-col  z-[100] px-10">
         <div className="z-50 flex flex-col h-fit sticky top-20 font-interTight">
-          <div className="about-second-heading font-medium mb-10 text-3xl md:text-5xl ">
+          <div className="about-second-heading font-medium mb-10 text-3xl  md:text-5xl ">
             Apart From This
           </div>
         </div>
