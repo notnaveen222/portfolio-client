@@ -5,9 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./contact.css";
 
 import Image from "next/image";
-import GraphicImage from "./Assets/GraphicImage.jpg";
-import Ceasar from "./Assets/Ceasar.jpg";
-import AnimeImage from "./Assets/animeImage.jpg";
+import GraphicImage from "./assets/GraphicImage.jpg";
+import Ceasar from "./assets/Ceasar.jpg";
+import AnimeImage from "./assets/animeImage.jpg";
 import GymImage from "./assets/image2.jpg";
 import Footer from "../Footer/Footer";
 
