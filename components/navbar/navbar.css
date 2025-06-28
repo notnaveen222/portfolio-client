@@ -1,0 +1,15 @@
+.nav-button::before {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  bottom: -1px;
+  background: white;
+  width: 0px;
+  left: 50%;
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+.nav-button:hover::before {
+  width: 50px;
+  left: 0%;
+}

@@ -5,10 +5,13 @@ import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from "react";
 
-export default function ProjectCard({ src, title, description }) {
+export default function ProjectCard({ src, title, description, url }) {
   return (
     <>
-      <div className="card  rounded-lg project-tile relative cursor-pointer overflow-hidden">
+      <div
+        onClick={() => window.open(url, "_blank")}
+        className="card  rounded-lg project-tile relative cursor-pointer overflow-hidden"
+      >
         <Image
           className="project-image hover:scale-110 transition-all duration-150 ease-out"
           src={src}

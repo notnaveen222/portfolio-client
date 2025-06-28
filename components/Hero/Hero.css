@@ -17,6 +17,12 @@
   animation: dot-scale 2s linear 0s infinite forwards;
 }
 
+.hero-gradient {
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #006cff 100%);
+  /* <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */
+  /* animation: hero-gradient-animation 2s linear 0s infinite; */
+}
+
 .small-dot {
   content: "";
   height: 13px;
@@ -40,6 +46,35 @@
   z-index: 10;
 }
 
+.hero-resume-button:hover .hero-resume-button-arrow-icon {
+  position: relative;
+  left: 5px;
+}
+
+.hero-resume-button:hover {
+  box-shadow: 0px 0px 7px #006cff;
+}
+.hero-resume-button {
+  transition: all 150ms ease-in-out;
+}
+
+.hero-resume-button-arrow-icon {
+  position: relative;
+  left: 0px;
+  transition: all;
+  transition-duration: 150ms;
+}
+
+.home-image::before {
+  content: "";
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 @keyframes dot-scale {
   0% {
     scale: 0;
@@ -50,4 +85,13 @@
   100% {
     scale: 0;
   }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
 }

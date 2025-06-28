@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,4 +21,34 @@ body {
   background-color: black;
   /* background-color: white; */
   font-family: "Inter", Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.inter-tight {
+  font-family: "Inter Tight", serif;
+}
+
+::selection {
+  background-color: white;
+  color: #000;
+}
+
+.text-graya1 {
+  color: #a1a1a1;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

@@ -5,8 +5,12 @@ import StaggerText from "../StaggerText";
 import "./Hero.css";
 import { GoArrowUpRight } from "react-icons/go";
 import { useState, useEffect } from "react";
+import { FaArrowRight } from "react-icons/fa6";
 
 const inter = Inter_Tight({ subsets: ["latin"] });
+
+//todo
+//Resume Button: use :after for BG glow instead of box shadow
 
 export default function Hero() {
   useEffect(() => {
@@ -28,7 +32,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="flex flex-col h-[70vh] justify-center items-center">
+      <div className="flex relative flex-col h-[70vh] justify-center  items-center ">
         <motion.div
           initial={{
             opacity: 0,
@@ -58,12 +62,12 @@ export default function Hero() {
           <StaggerText
             title="WEB"
             selfDelay={2.7}
-            stlyes="text-6xl sm:text-xl md:text-9xl font-extrabold"
+            stlyes="text-6xl sm:text-xl md:text-9xl font-extrabold z-1"
           />
           <StaggerText
             title="ARCHITECT"
             selfDelay={2.75}
-            stlyes="text-6xl sm:text-8xl md:text-9xl font-extrabold"
+            stlyes="text-6xl sm:text-8xl md:text-9xl font-extrabold z-1"
           />
         </div>
         <motion.div
@@ -80,6 +84,25 @@ export default function Hero() {
         >
           Designer and Developer, focused on intuitive and engaging user
           experiences.
+        </motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            delay: 3,
+          }}
+          className="relative top-12"
+        >
+          <button className="flex hero-resume-button items-center text-xl gap-2 transition-all duration-150 ease-in-out bg-[#006cff] rounded-full px-6  py-3 text-white">
+            Resume
+            <span className="hero-resume-button-arrow-icon">
+              <FaArrowRight />
+            </span>
+          </button>
         </motion.div>
       </div>
       <motion.div

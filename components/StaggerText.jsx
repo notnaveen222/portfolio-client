@@ -32,7 +32,7 @@ export default function StaggerText({ title, selfDelay, stlyes }) {
               ease: "easeInOut",
             }}
           >
-            {l}
+            {l === " " ? "\u00A0" : l}
           </motion.span>
         );
       })}

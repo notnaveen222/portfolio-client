@@ -1,0 +1,34 @@
+.particlev1 {
+  height: 10px;
+  width: 10px;
+}
+
+.particlev2 {
+  height: 20px;
+  width: 20px;
+}
+
+.particlev3 {
+  height: 30px;
+  width: 30px;
+}
+
+.particlev4 {
+  height: 15px;
+  width: 15px;
+}
+
+.particlev5 {
+  height: 35px;
+  width: 35px;
+}
+
+.particle {
+  background-color: white;
+  mix-blend-mode: difference;
+}
+
+.particle-blue {
+  background-color: #38bdf8; /* Tailwind sky-400 */
+  mix-blend-mode: lighten;
+}

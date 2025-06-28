@@ -11,10 +11,11 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@skits/react-text-scramble": "^1.1.0",
+    "@studio-freight/lenis": "^1.0.42",
     "framer-motion": "^11.18.2",
     "gsap": "^3.12.7",
     "gsap-trial": "^3.12.7",
-    "motion": "^12.0.6",
+    "motion": "^12.4.1",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
