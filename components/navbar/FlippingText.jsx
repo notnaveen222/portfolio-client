@@ -2,12 +2,13 @@ import { motion } from "motion/react";
 
 const DURATION = 0.3;
 
-export default function FlippingText({ title, styles }) {
+export default function FlippingText({ title, styles, onClick }) {
   return (
     <motion.div
       initial="initial"
       whileHover="hovered"
       className={`${styles} nav-button relative block overflow-hidden  whitespace-normal`}
+      onClick={onClick}
     >
       <motion.div
         variants={{

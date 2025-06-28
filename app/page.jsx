@@ -28,10 +28,16 @@ export default function Home() {
       <Navbar />
       <Preloader />
       <Hero />
-      <Projects />
+      <div id="projects">
+        <Projects />
+      </div>
       {/* <About /> */}
-      <AboutV2 />
-      <Contact />
+      <div id="about">
+        <AboutV2 />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       {/* <Footer /> */}
     </>
   );

@@ -8,6 +8,9 @@ import GraphicImage from "./assets/GraphicImage.jpg";
 import Ceasar from "./assets/Ceasar.jpg";
 import AnimeImage from "./assets/animeImage2.jpg";
 import GymImage from "./assets/image2.jpg";
+import AotImage from "./assets/aot.png";
+import travisImage from "./assets/travis.png";
+import gymMe from "./assets/gym-me.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -137,6 +140,21 @@ export default function AboutV2() {
       }
     );
     gsap.fromTo(
+      ".about-img-card",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".about-img-card", // Use a shared ancestor if needed
+          start: "top bottom-=200px",
+          end: "bottom center",
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
       ".about-second-heading",
       { opacity: 0, y: 10 },
       {
@@ -219,69 +237,74 @@ export default function AboutV2() {
           as they look 👀.
         </div>
       </div>
-      <div className="text-white h-[190vh] w-screen flex flex-col  z-[100] px-10">
-        <div className="z-50 flex flex-col h-fit sticky top-20 font-interTight">
-          <div className="about-second-heading font-medium mb-10 text-3xl  md:text-5xl ">
+      <div className="text-white h-[100vh] mb-20 w-screen flex flex-col  z-[50] px-10">
+        <div className="text-white w-screen sticky top-0 flex flex-col z-[50] px-10 py-20">
+          <div className="about-second-heading  font-medium mb-10 text-3xl md:text-5xl">
             Apart From This
           </div>
+          <div className="z-50 flex flex-col font-interTight mx-auto">
+            <div className=" flex gap-y-5 flex-col h-[80vh]  max-w-6xl w-screen">
+              <div className="h-1/2 overflow-hidden  flex-grow grid grid-cols-3 gap-4">
+                <div className="relative about-img-card col-span-2 rounded-lg overflow-hidden">
+                  <Image
+                    src={AotImage}
+                    alt="about-img"
+                    className="w-full object-cover rounded-lg "
+                  ></Image>
+                  <div className="absolute bottom-0 right-0  text-right  text-white text-4xl font-normal bg-black/40  mr-5 mb-3 px-2 py-1 rounded-lg">
+                    I Watch Anime
+                  </div>
+                </div>
+                <div className="col-span-1 about-img-card relative rounded-lg overflow-hidden">
+                  <Image
+                    src={travisImage}
+                    alt="about-img"
+                    className=" object-contain h-fit rounded-lg"
+                  ></Image>
+                  <div className="absolute bottom-0 left-0 text-left   text-white text-4xl font-normal bg-black/40 ml-5 mb-3 px-2 py-1 rounded-lg">
+                    I design posters
+                  </div>
+                </div>
+              </div>
+              <div className="h-1/2  flex-grow grid grid-cols-3 gap-4 rounded-lg overflow-hidden">
+                <div className="col-span-1 about-img-card relative rounded-lg overflow-hidden">
+                  <Image
+                    src={Ceasar}
+                    alt="about-img"
+                    className="object-cover rounded-lg"
+                  ></Image>
+                  <div className="absolute bottom-0 right-0 text-right text-white text-4xl font-normal mr-5 mb-3 ">
+                    <span className="bg-black/40 rounded-t-lg rounded-bl-lg px-2 inline-block">
+                      Meet My Dog,
+                    </span>{" "}
+                    <br />
+                    <span className="bg-black/40  px-2 rounded-b-lg inline-block">
+                      Ceasar
+                    </span>
+                  </div>
+                </div>
+                <div className="col-span-2 about-img-card relative rounded-lg overflow-hidden">
+                  <Image
+                    src={gymMe}
+                    alt="about-img"
+                    className=" object-cover h-full rounded-lg"
+                  ></Image>
+                  <div className="absolute bottom-0 left-0 text-left text-white text-4xl font-normal ml-5 mb-3 ">
+                    <span className="bg-black/40 rounded-t-lg px-2 inline-block">
+                      I
+                    </span>{" "}
+                    <br />
+                    <span className="bg-black/40 rounded-tr-lg px-2 rounded-b-lg inline-block">
+                      Go Gym
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="about-section-card z-50 pt-28 flex flex-col gap-y-10 h-fit  ">
-          <div className="flex about-box justify-between px-5 md:px-36">
-            <Image
-              src={AnimeImage}
-              alt="about-img"
-              className="about-img size-32 md:size-80 object-cover"
-            ></Image>
-            <div className="text-center flex items-center font-black text-2xl md:text-8xl">
-              I Watch Anime
-            </div>
-          </div>
-          <div className="flex about-box justify-between px-5 md:px-36">
-            <Image
-              src={GymImage}
-              alt="about-img"
-              className="about-img size-32 md:size-80 object-cover"
-            ></Image>
-            <div className="text-center flex items-center   font-black text-2xl md:text-8xl">
-              I go to jim
-            </div>
-          </div>
-          <div className="flex about-box justify-between px-5 md:px-36">
-            <Image
-              src={GraphicImage}
-              alt="about-img"
-              className="about-img size-32 md:size-80 object-contain"
-            ></Image>
-            <div className="text-center  flex items-center  font-black text-2xl md:text-8xl">
-              I do poster designing
-            </div>
-          </div>
-          <div className="flex about-box justify-between px-36">
-            <Image
-              src={Ceasar}
-              alt="about-img"
-              className="about-img size-80 object-cover"
-            ></Image>
-            <div className="text-center flex items-center  font-black text-8xl">
-              Meet my dog, Ceasar.
-            </div>
-          </div>
-          {/* <Image
-            src={GymImage}
-            alt="about-img"
-            className="size-96 about-img  object-cover self-end row-start-2 col-start-2"
-          ></Image>
-          <Image
-            src={Ceasar}
-            className="size-96 about-img object-cover row-start-3 "
-            alt="about-img"
-          ></Image>
-          <Image
-            alt="about-img"
-            src={GraphicImage}
-            className="size-96 about-img object-contain self-end row-start-4 col-start-2"
-          ></Image> */}
-        </div>
+
+        <div className="about-section-card z-50 pt-28 flex flex-col gap-y-10 h-fit  "></div>
       </div>
     </div>
   );

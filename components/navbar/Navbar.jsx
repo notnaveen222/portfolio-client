@@ -17,9 +17,33 @@ export default function Navbar() {
         Naveen
       </div>
       <div className="hidden sm:flex font-interTight font-medium min-w-[40%] text-sm justify-evenly border-l bg-transparent border-l-[#2e2e2e] h-full items-center">
-        <FlippingText styles=" cursor-pointer" title="Projects" />
-        <FlippingText styles=" cursor-pointer" title="About" />
-        <FlippingText styles=" cursor-pointer" title="Contact" />
+        <FlippingText
+          styles=" cursor-pointer"
+          title="Projects"
+          onClick={() =>
+            document
+              .getElementById("projects")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <FlippingText
+          styles=" cursor-pointer"
+          title="About"
+          onClick={() =>
+            document
+              .getElementById("about")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <FlippingText
+          styles=" cursor-pointer"
+          title="Contact"
+          onClick={() =>
+            document
+              .getElementById("contact")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        />
       </div>
     </motion.div>
   );

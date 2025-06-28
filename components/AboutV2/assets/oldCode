@@ -1,0 +1,55 @@
+          {/* <div className="flex about-box justify-between px-5 md:px-36">
+            <Image
+              src={AnimeImage}
+              alt="about-img"
+              className="about-img size-32 md:size-80 object-cover"
+            ></Image>
+            <div className="text-center flex items-center font-black text-2xl md:text-8xl">
+              I Watch Anime
+            </div>
+          </div>
+          <div className="flex about-box justify-between px-5 md:px-36">
+            <Image
+              src={GymImage}
+              alt="about-img"
+              className="about-img size-32 md:size-80 object-cover"
+            ></Image>
+            <div className="text-center flex items-center   font-black text-2xl md:text-8xl">
+              I go to jim
+            </div>
+          </div>
+          <div className="flex about-box justify-between px-5 md:px-36">
+            <Image
+              src={GraphicImage}
+              alt="about-img"
+              className="about-img size-32 md:size-80 object-contain"
+            ></Image>
+            <div className="text-center  flex items-center  font-black text-2xl md:text-8xl">
+              I do poster designing
+            </div>
+          </div>
+          <div className="flex about-box justify-between px-36">
+            <Image
+              src={Ceasar}
+              alt="about-img"
+              className="about-img size-80 object-cover"
+            ></Image>
+            <div className="text-center flex items-center  font-black text-8xl">
+              Meet my dog, Ceasar.
+            </div>
+          </div> */}
+          {/* <Image
+            src={GymImage}
+            alt="about-img"
+            className="size-96 about-img  object-cover self-end row-start-2 col-start-2"
+          ></Image>
+          <Image
+            src={Ceasar}
+            className="size-96 about-img object-cover row-start-3 "
+            alt="about-img"
+          ></Image>
+          <Image
+            alt="about-img"
+            src={GraphicImage}
+            className="size-96 about-img object-contain self-end row-start-4 col-start-2"
+          ></Image> */}

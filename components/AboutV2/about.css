@@ -32,3 +32,7 @@
   background-color: #38bdf8; /* Tailwind sky-400 */
   mix-blend-mode: lighten;
 }
+
+.BT-GradientBG {
+  background: linear-gradient(to top, black 60%, transparent);
+}
