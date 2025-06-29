@@ -230,11 +230,10 @@ export default function AboutV2() {
       </div>
       <div className="h-[140vh] bg-black">
         <div className="h-screen top-0 flex justify-center items-center text-3xl mx-auto text-center w-4/5 sticky z-10 about-text font-semibold tracking-wider font-interTight text-white">
-          I'm Naveen, 19, a pre-final year student 🏫 and passionate web
-          developer. I bring ideas into motion — pixel-perfect ✨,
-          performance-ready, and purposeful. My work bridges the gap between
-          aesthetics and functionality 🔧, crafting interfaces that feel as good
-          as they look 👀.
+          I'm Naveen, 19, a pre-final year student and passionate web developer.
+          I bring ideas into motion — pixel-perfect and performance-ready. My
+          work bridges the gap between aesthetics and functionality, crafting
+          interfaces that feel as good as they look.
         </div>
       </div>
       <div className="text-white mb-20 w-screen flex flex-col  z-[50] sm:px-0 lg:px-10">
@@ -249,7 +248,7 @@ export default function AboutV2() {
                   <Image
                     src={AotImage}
                     alt="about-img"
-                    className="w-full object-cover h-full rounded-lg "
+                    className="w-full hover:scale-110 transition-all duration-500 ease-out cursor-pointer object-cover h-full rounded-lg "
                   ></Image>
                   <div className="absolute bottom-0 right-0  text-right  text-white text-3xl lg:text-4xl font-normal bg-black/40  mr-5 mb-3 px-2 py-1 rounded-lg">
                     I Watch Anime
@@ -259,7 +258,7 @@ export default function AboutV2() {
                   <Image
                     src={travisImage}
                     alt="about-img"
-                    className=" object-cover h-full rounded-lg"
+                    className=" object-cover hover:scale-110  transition-all duration-500 ease-out cursor-pointer h-full rounded-lg"
                   ></Image>
                   <div className="absolute bottom-0 left-0 text-left   text-white text-3xl lg:text-4xl font-normal bg-black/40 ml-5 mb-3 px-2 py-1 rounded-lg">
                     I design posters
@@ -271,7 +270,7 @@ export default function AboutV2() {
                   <Image
                     src={Ceasar}
                     alt="about-img"
-                    className="object-cover h-full rounded-lg"
+                    className="object-cover hover:scale-110 transition-all duration-500 ease-out cursor-pointer h-full rounded-lg"
                   ></Image>
                   <div className=" absolute bottom-0 right-0 text-right text-white text-3xl lg:text-4xl font-normal mr-5 mb-3 ">
                     <span className="bg-black/40 rounded-t-lg rounded-bl-lg px-2 inline-block">
@@ -287,7 +286,7 @@ export default function AboutV2() {
                   <Image
                     src={gymMe}
                     alt="about-img"
-                    className=" object-cover h-full rounded-lg"
+                    className=" object-cover hover:scale-110 transition-all duration-500 ease-out cursor-pointer h-full rounded-lg"
                   ></Image>
                   <div className="absolute bottom-0 left-0 text-left text-white text-3xl lg:text-4xl font-normal ml-5 mb-3 ">
                     <span className="bg-black/40 rounded-t-lg px-2 inline-block">
