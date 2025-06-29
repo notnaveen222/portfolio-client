@@ -102,12 +102,16 @@ export default function Hero() {
           }}
           className="relative top-12"
         >
-          <button className="flex hero-resume-button items-center text-xl gap-2 transition-all duration-150 ease-in-out bg-[#006cff] rounded-full px-6  py-3 text-white">
+          <a
+            href="https://drive.google.com/file/d/19WmYA3bnZEYIQiKXZjn87BeZ-HmIPBVh/view?usp=sharing"
+            target="_blank"
+            className="flex hero-resume-button items-center text-xl gap-2 transition-all duration-150 ease-in-out bg-[#006cff] rounded-full px-6  py-3 text-white"
+          >
             Resume
             <span className="hero-resume-button-arrow-icon">
               <FaArrowRight />
             </span>
-          </button>
+          </a>
         </motion.div>
       </div>
       <motion.div
