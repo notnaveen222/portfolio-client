@@ -163,7 +163,7 @@ export default function Contact() {
           <div className="bar bar4"></div>
           <div className="bar bar2"></div>
         </div>
-        <div className="projectsBG z-[60] flex flex-col w-full h-full lg:h-screen justify-between pt-12 pb-6 text-black  bg-white">
+        <div className="projectsBG  z-[60] flex flex-col w-full h-full lg:h-screen justify-between pt-12 pb-6 text-black  bg-white">
           <div className="mx-auto sm:max-w-[90%] max-w-[98%]  z-[100]">
             <div className="z-[100] contact-container mb-10 flex flex-col lg:flex-row gap-10 lg:gap-36 justify-between">
               <div className="">
@@ -227,7 +227,7 @@ export default function Contact() {
             </div>
             <div className="">
               <div className="">
-                <div className="footer  z-[60] pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-10 mx-auto   rounded-3xl bg-[#141414] ">
+                <div className="footer  z-[60] pt-14 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-10 mx-auto rounded-3xl bg-[#141414] ">
                   <div className="flex flex-col items-center sm:justify-between gap-2 sm:flex-row sm:gap-0">
                     <div>
                       <div className="text-xl text-center sm:text-left font-semibold text-white font-interT">
