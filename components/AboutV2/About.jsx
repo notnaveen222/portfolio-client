@@ -237,21 +237,21 @@ export default function AboutV2() {
           as they look 👀.
         </div>
       </div>
-      <div className="text-white h-[100vh] mb-20 w-screen flex flex-col  z-[50] px-10">
-        <div className="text-white w-screen sticky top-0 flex flex-col z-[50] px-10 py-20">
+      <div className="text-white mb-20 w-screen flex flex-col  z-[50] sm:px-0 lg:px-10">
+        <div className="text-white w-screen flex flex-col z-[50] sm:px-0 lg:px-10 py-20">
           <div className="about-second-heading  font-medium mb-10 text-3xl md:text-5xl">
             Apart From This
           </div>
-          <div className="z-50 flex flex-col font-interTight mx-auto">
-            <div className=" flex gap-y-5 flex-col h-[80vh]  max-w-6xl w-screen">
-              <div className="h-1/2 overflow-hidden  flex-grow grid grid-cols-3 gap-4">
-                <div className="relative about-img-card col-span-2 rounded-lg overflow-hidden">
+          <div className="z-50 flex flex-col font-interTight sm:mx-auto">
+            <div className=" flex gap-y-5 flex-col sm:h-[80vh] px-2  max-w-6xl w-screen">
+              <div className="h-1/2 overflow-hidden  flex-grow grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="relative about-img-card col-span-1 sm:col-span-2 rounded-lg overflow-hidden">
                   <Image
                     src={AotImage}
                     alt="about-img"
-                    className="w-full object-cover rounded-lg "
+                    className="w-full object-cover h-full rounded-lg "
                   ></Image>
-                  <div className="absolute bottom-0 right-0  text-right  text-white text-4xl font-normal bg-black/40  mr-5 mb-3 px-2 py-1 rounded-lg">
+                  <div className="absolute bottom-0 right-0  text-right  text-white text-3xl lg:text-4xl font-normal bg-black/40  mr-5 mb-3 px-2 py-1 rounded-lg">
                     I Watch Anime
                   </div>
                 </div>
@@ -259,21 +259,21 @@ export default function AboutV2() {
                   <Image
                     src={travisImage}
                     alt="about-img"
-                    className=" object-contain h-fit rounded-lg"
+                    className=" object-cover h-full rounded-lg"
                   ></Image>
-                  <div className="absolute bottom-0 left-0 text-left   text-white text-4xl font-normal bg-black/40 ml-5 mb-3 px-2 py-1 rounded-lg">
+                  <div className="absolute bottom-0 left-0 text-left   text-white text-3xl lg:text-4xl font-normal bg-black/40 ml-5 mb-3 px-2 py-1 rounded-lg">
                     I design posters
                   </div>
                 </div>
               </div>
-              <div className="h-1/2  flex-grow grid grid-cols-3 gap-4 rounded-lg overflow-hidden">
-                <div className="col-span-1 about-img-card relative rounded-lg overflow-hidden">
+              <div className="h-1/2  flex-grow grid grid-cols-1 sm:grid-cols-3 gap-4 rounded-lg overflow-hidden">
+                <div className="order-2 sm:order-1 col-span-1 about-img-card relative rounded-lg overflow-hidden">
                   <Image
                     src={Ceasar}
                     alt="about-img"
-                    className="object-cover rounded-lg"
+                    className="object-cover h-full rounded-lg"
                   ></Image>
-                  <div className="absolute bottom-0 right-0 text-right text-white text-4xl font-normal mr-5 mb-3 ">
+                  <div className=" absolute bottom-0 right-0 text-right text-white text-3xl lg:text-4xl font-normal mr-5 mb-3 ">
                     <span className="bg-black/40 rounded-t-lg rounded-bl-lg px-2 inline-block">
                       Meet My Dog,
                     </span>{" "}
@@ -283,13 +283,13 @@ export default function AboutV2() {
                     </span>
                   </div>
                 </div>
-                <div className="col-span-2 about-img-card relative rounded-lg overflow-hidden">
+                <div className="order-1 sm:order-2 col-span-1 sm:col-span-2 about-img-card relative rounded-lg overflow-hidden">
                   <Image
                     src={gymMe}
                     alt="about-img"
                     className=" object-cover h-full rounded-lg"
                   ></Image>
-                  <div className="absolute bottom-0 left-0 text-left text-white text-4xl font-normal ml-5 mb-3 ">
+                  <div className="absolute bottom-0 left-0 text-left text-white text-3xl lg:text-4xl font-normal ml-5 mb-3 ">
                     <span className="bg-black/40 rounded-t-lg px-2 inline-block">
                       I
                     </span>{" "}
@@ -303,8 +303,6 @@ export default function AboutV2() {
             </div>
           </div>
         </div>
-
-        <div className="about-section-card z-50 pt-28 flex flex-col gap-y-10 h-fit  "></div>
       </div>
     </div>
   );

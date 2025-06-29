@@ -163,17 +163,17 @@ export default function Contact() {
           <div className="bar bar4"></div>
           <div className="bar bar2"></div>
         </div>
-        <div className="projectsBG z-[60] flex flex-col w-screen h-screen justify-between pt-12 pb-6 text-black  bg-white">
-          <div className="mx-auto max-w-[90%] z-[100]">
-            <div className="z-[100] contact-container mb-10 flex gap-36 justify-between">
+        <div className="projectsBG z-[60] flex flex-col w-full h-full lg:h-screen justify-between pt-12 pb-6 text-black  bg-white">
+          <div className="mx-auto sm:max-w-[90%] max-w-[98%]  z-[100]">
+            <div className="z-[100] contact-container mb-10 flex flex-col lg:flex-row gap-10 lg:gap-36 justify-between">
               <div className="">
-                <div className="text-9xl pb-10 font-interT font-semibold border-b-black border-b-2 pt-16">
+                <div className="text-5xl sm:text-7xl lg:text-9xl pb-10 font-interT font-semibold border-b-black border-b-2 pt-16">
                   LIKE WHAT YOU SEE?
                 </div>
-                <div className="text-4xl font-interT font-semibold mt-5">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-interT font-semibold mt-5">
                   GET IN TOUCH
                 </div>
-                <div className="text-4xl font-interT font-semibold mt-5">
+                <div className="text-2xl sm:text-3xl lg:text-4xl  font-interT font-semibold mt-5">
                   developer.naveenkm@gmail.com
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function Contact() {
                 action="https://formsubmit.co/developer.naveenkm@gmail.com
 "
                 method="POST"
-                className=" w-4/12 bg-[#141414] rounded-2xl flex flex-col gap-5 mt-4 py-5 px-4"
+                className="w-full lg:w-4/12 bg-[#141414] rounded-2xl flex flex-col gap-5 sm:mt-4 py-5 px-4"
               >
                 <div className="text-white font-semibold text-lg">
                   Send Message
@@ -228,44 +228,46 @@ export default function Contact() {
             <div className="">
               <div className="">
                 <div className="footer  z-[60] pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-10 mx-auto   rounded-3xl bg-[#141414] ">
-                  <div className="flex flex-col justify-between gap-2 sm:flex-row sm:flex-rows sm:gap-0">
+                  <div className="flex flex-col items-center sm:justify-between gap-2 sm:flex-row sm:gap-0">
                     <div>
-                      <div className="text-xl font-semibold text-white font-interT">
+                      <div className="text-xl text-center sm:text-left font-semibold text-white font-interT">
                         Naveen K.M
                       </div>
-                      <div className="text-lg w-2/3 font-medium text-graya1 tracking-normal  font-interT underline-offset-[7px] ">
+                      <div className="text-lg w-full sm:w-2/3 font-medium text-center sm:text-left text-graya1 tracking-normal  font-interT underline-offset-[7px] ">
                         I don't just build websites. I engineer experiences that
                         leave a mark.
                       </div>
                     </div>
                     <div>
                       <div className="font-interT">
-                        <div className="text-xl font-semibold text-graya1">
+                        <div className="text-xl mt-5 font-semibold text-center sm:text-left text-graya1">
                           Connect
                         </div>
-                        <a
-                          href="https://www.instagram.com/not._.naveen/"
-                          target="_blank"
-                          className="cursor-pointer flex items-center text-lg font-semibold text-white gap font-interT"
-                        >
-                          Instagram
-                        </a>
-                        <a
-                          href="https://x.com/the222thNigga"
-                          target="_blank"
-                          className="cursor-pointer flex items-center text-lg font-semibold text-white gap font-interT"
-                        >
-                          {" "}
-                          Twitter
-                        </a>
-                        <a
-                          href="www.linkedin.com/in/naveen-k-m-047b42288"
-                          target="_blank"
-                          className="cursor-pointer flex items-center text-lg font-semibold text-white gap font-interT"
-                        >
-                          {" "}
-                          Linkedin
-                        </a>
+                        <div className="flex flex-row gap-10 sm:inline sm:gap-0">
+                          <a
+                            href="https://www.instagram.com/not._.naveen/"
+                            target="_blank"
+                            className="cursor-pointer flex items-center text-lg font-semibold text-white gap font-interT"
+                          >
+                            Instagram
+                          </a>
+                          <a
+                            href="https://x.com/the222thNigga"
+                            target="_blank"
+                            className="cursor-pointer flex items-center text-lg font-semibold text-white  gap font-interT"
+                          >
+                            {" "}
+                            Twitter
+                          </a>
+                          <a
+                            href="www.linkedin.com/in/naveen-k-m-047b42288"
+                            target="_blank"
+                            className="cursor-pointer  flex items-center text-lg font-semibold text-white gap font-interT"
+                          >
+                            {" "}
+                            Linkedin
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
