@@ -12,6 +12,18 @@
   height: 30%;
   background: linear-gradient(to top, black 60%, transparent);
 }
+.project-tile:hover .project-card-title-white {
+  height: 30%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.8) 60%,
+    transparent
+  );
+}
+.project-card-title-white {
+  background: linear-gradient(to top, transparent, transparent);
+  transition: all 0.3s;
+}
 
 .project-card-title {
   background: linear-gradient(to top, transparent, transparent);

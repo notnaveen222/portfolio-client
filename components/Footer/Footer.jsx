@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-between pt-5 mt-16 border-t">
           <div className="text-white font-interT">
-            <div className="inline mr-1">© 2024</div>
+            <div className="inline mr-1">© 2025</div>
             {/* <div className="inline">Naveen K.M</div> */}
           </div>
           <div className="flex flex-wrap items-center text-right text-white font-interT">

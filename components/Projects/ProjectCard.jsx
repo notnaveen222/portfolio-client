@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from "react";
 
-export default function ProjectCard({ src, title, description, url }) {
+export default function ProjectCard({
+  src,
+  title,
+  description,
+  url,
+  blackText,
+}) {
   return (
     <>
       <div
@@ -17,12 +23,24 @@ export default function ProjectCard({ src, title, description, url }) {
           src={src}
           alt="Project Thumbnail"
         ></Image>
-        <div className="absolute bottom-0 project-card-title flex items-center justify-between pl-5 h-[40%] sm:h-[15%] w-full">
+        <div
+          className={`absolute bottom-0 ${
+            blackText ? "project-card-title-white" : "project-card-title"
+          } flex items-center justify-between pl-5 h-[40%] sm:h-[15%] w-full`}
+        >
           <div>
-            <div className=" text-white left-5 pb-0 font-bold text-xl sm:text-3xl ">
+            <div
+              className={`${
+                blackText ? "text-black" : "text-white"
+              } text-shadow-lg text-shadow-white left-5 pb-0 font-bold text-xl sm:text-3xl `}
+            >
               {title}
             </div>
-            <div className="project-desc text-white text-xs sm:text-base">
+            <div
+              className={`project-desc ${
+                blackText ? "text-black" : "text-white"
+              } text-xs sm:text-base`}
+            >
               {description}
             </div>
           </div>
