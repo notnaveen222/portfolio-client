@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Naveen Portfolio",
-  description: "Created using NextJS",
+  description: "Naveen Portfolio Site built with NextJS",
 };
 
 export default function RootLayout({ children }) {
