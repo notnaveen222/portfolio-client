@@ -103,7 +103,7 @@ export default function Hero() {
           className="relative top-12"
         >
           <a
-            href="https://drive.google.com/file/d/1yzbowapQD3ScBJo6ULWLko0Eks_eW-6X/view?usp=sharing"
+            href="https://drive.google.com/file/d/1CxlfnIW5JZrSxOHm-KVjmXuYLeue1jZJ/view"
             target="_blank"
             className="flex hero-resume-button items-center text-xl gap-2 transition-all duration-150 ease-in-out bg-[#006cff] rounded-full px-6  py-3 text-white"
           >
