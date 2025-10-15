@@ -1,6 +1,6 @@
 "use client";
 import codeDropImage from "./Assets/code-drop-nowindow.png";
-import qrcGenImage from "./Assets/qrc-gen-nowindow.png";
+import aicRecSite from "./Assets/aic-rec-site.png";
 import clickdImage from "./Assets/clickd.png";
 import vibranceImage from "./Assets/vibrance.png";
 import devsHouseImage from "./Assets/devshouse.png";
@@ -26,7 +26,7 @@ export default function Projects() {
         transition={{
           delay: 3,
         }}
-        className="grid grid-cols-1 sm:grid-cols-2 gap-10 px-5 sm:px-20 lg:px-40 mb-28"
+        className="grid grid-cols-1 sm:grid-cols-2  gap-10 px-5 sm:px-20 lg:px-40 mb-28"
       >
         <ProjectCard
           blackText={true}
@@ -35,7 +35,6 @@ export default function Projects() {
           title="Clickd.store"
           description="(Freelance Project) An online e-photobooth to order custom photo strips, built with Next.js and Supabase."
         />
-
         <ProjectCard
           src={devsHouseImage}
           title="DevsHouse'25"
@@ -43,17 +42,22 @@ export default function Projects() {
           description="Collaborated with a team to build a responsive platform for managing hackathon registrations, submissions, and real-time event updates."
         />
         <ProjectCard
-          src={codeDropImage}
-          title="Code Drop"
-          url="https://codedrop1.vercel.app/"
-          description="Seamlessly create code snippets, Built with NextJS, Express, MongoDB"
+          src={aicRecSite}
+          title="Club Recruitment Portal"
+          url="https://aic-recruitment-portal.vercel.app/"
+          description="A web app built to streamline club recruitment workflow, allowing users to explore departments, submit applications."
         />
-
         <ProjectCard
           src={vibranceImage}
           url="https://vitvibrance.com/"
           title="VIT Vibrance Website"
           description="Contributed to the development of my college's annual cultural fest website that showcased events, schedules, and managed registrations"
+        />{" "}
+        <ProjectCard
+          src={codeDropImage}
+          title="Code Drop"
+          url="https://codedrop1.vercel.app/"
+          description="Seamlessly create code snippets, Built with NextJS, Express, MongoDB"
         />
       </motion.div>
     </>
