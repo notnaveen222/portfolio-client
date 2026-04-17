@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npx create-next-app@latest lab --no-typescript --no-eslint --tailwind --app --no-src-dir --no-turbopack --import-alias \"@/*\" --yes)",
+      "Bash(wait)",
+      "Bash(npm run:*)"
     ]
   }
 }
