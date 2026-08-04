@@ -55,7 +55,7 @@ export default function Hero() {
             <div></div>
             <div
               onClick={() => {
-                window.location.href = "mailto:youremail@example.com";
+                window.location.href = "mailto:itsnotnaveen@gmail.com";
               }}
               className="tracking-widest  font-light flex items-center gap-1 opacity-90 hover:opacity-100 selection:bg-[#a1a1a1]/20"
             >
