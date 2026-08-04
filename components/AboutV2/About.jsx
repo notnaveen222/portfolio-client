@@ -230,10 +230,10 @@ export default function AboutV2() {
       </div>
       <div className="h-[140vh] bg-black">
         <div className="h-screen top-0 flex justify-center items-center text-3xl mx-auto text-center w-4/5 sticky z-10 about-text font-semibold tracking-wider font-interTight text-white">
-          I'm Naveen, 19, a pre-final year student and passionate web developer.
-          I bring ideas into motion — pixel-perfect and performance-ready. My
-          work bridges the gap between aesthetics and functionality, crafting
-          interfaces that feel as good as they look.
+          I'm Naveen, 19, a final year student and passionate web developer.
+          I bring ideas into motion, blending clean design with solid
+          performance. My work bridges the gap between aesthetics and
+          functionality, crafting interfaces that feel as good as they look.
         </div>
       </div>
       <div className="text-white mb-20 w-screen flex flex-col  z-[50] sm:px-0 lg:px-10">
